@@ -1,0 +1,43 @@
+<!--Laras code-->
+
+{% extends "base.html" %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<link rel="stylesheet" href="../static/report.css">
+
+<body>
+<br>
+    <h1 align="center">Weekly Spending Graph</h1>
+<br>
+
+<hr class="mb"/>
+
+<canvas id="myChart" style="width:80%; max-width:95%"></canvas>
+
+<!--Hard coded javascript to display a pie graph showing the users expenses-->
+
+<script>
+var xValues = ["Gas", "Rent", "Food", "Electricity", "Clothes"];
+var yValues = [60, 200, 100, 20, 30];
+var barColors = [
+  "#3D3124",
+  "#C8BDB2",
+  "#BD976F",
+  "#3D3A36",
+  "#8F7254"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+});
+</script>
+</body>
+{% endblock %}

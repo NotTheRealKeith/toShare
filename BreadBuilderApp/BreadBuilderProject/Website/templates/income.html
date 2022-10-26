@@ -1,0 +1,36 @@
+<!--Keiths code-->
+{% extends "base.html" %} <!--Inherits from base html-->
+
+{% block content %}
+
+<dev class="wrapper"> <!--Creating a whole dashboard-->
+
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h1>How much do you make per week?</h1>
+            <p>If your income does not show on your profile, please re-enter your income.</p>
+        </div>
+    </div>
+
+    <dev class="Income_container">
+        <form method="POST"> <!--Using forms to get income data-->
+            <br>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Income Amount $</span>
+                </div>
+
+                <input type="text" name="income" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+
+            <br/>
+            <button type="submit" class="btn btn-primary">Confirm</button>
+        </form>
+
+    </dev>
+
+
+</dev>
+{% endblock %}

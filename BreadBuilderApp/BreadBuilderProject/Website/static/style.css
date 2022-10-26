@@ -1,0 +1,177 @@
+/* universal reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* color variables */
+:root {
+  --primary: #BC977B;
+  --dark: #785E47;
+  --light: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, #BC977B 0%, rgba(188, 151, 123, 0.945736) 27.35%, rgba(188, 151, 123, 0.807336) 49.72%, rgba(188, 151, 123, 0.646041) 70.76%, rgba(188, 151, 123, 0.572725) 79.62%, rgba(188, 151, 123, 0.435094) 86.93%, rgba(188, 151, 123, 0.390984) 92.69%, rgba(188, 151, 123, 0.238875) 96.01%, rgba(188, 151, 123, 0.1225) 97.56%, rgba(188, 151, 123, 0) 100%);
+}
+
+
+/* nav styling start */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo img {
+  width: 6.5%;
+  height: 6.5%;
+  float: left;
+  margin-right: 5px;
+}
+
+.logo {
+  color: #785E47;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+
+.logo h4{
+  padding-top: 5px;
+  font-size: 32px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+
+
+/*.nav-links a.active {
+  border-bottom: 3px solid black;
+}*/
+
+/* nav styling end */
+/*welcome page styling start*/
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/*.col1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 150px;
+}*/
+
+.col1 h1 {
+  font-size: 70px;
+  color: white;
+}
+
+.col1 h4 {
+  font-size: 24px;
+  color: white;
+  font-weight: 20;
+}
+
+/*.col2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}*/
+
+.col2 .book {
+  width: 100%;
+  /*margin: 30px; took this out because it was not centered*/
+}
+/*welcome page styling end*/
+/* about us page styling start */
+.wrapper {
+  display: grid;
+
+}
+
+.center_text h3 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.img_container {
+  padding-top:2vh;
+  padding-bottom:1vh;
+}
+
+.img_container .abt_img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+/* about us page styling end */
+/* quiz styling start */
+.jumbotron  {
+  text-align: center;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.quiz_container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.quiz_option{
+  background: var(--light);
+  text-align: center;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+}
+/* quiz styling end */
+
+/*profile styling start*/
+.btn_size{
+  width: 20%;
+}
+
+.jumbo2{
+  background-color: var(--dark);
+}
+/*profile styling start*/

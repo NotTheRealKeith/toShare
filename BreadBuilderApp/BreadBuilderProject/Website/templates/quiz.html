@@ -1,0 +1,150 @@
+<!--Keiths Code-->
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- quiz page start -->
+<div class="wrapper">
+
+    <!-- quz question -->
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h1>How Often Do You Eat Out?</h1>
+            <p>Please select one of the 4 options and choose a budgeting plan</p>
+        </div>
+    </div>
+
+    <!-- quiz options start -->
+    <div class="quiz_container">
+
+        <!-- option 1: save $10~$20 OR 10-15% of income -->
+        <div class="quiz_option option_a">
+            <i class="fa-solid fa-money-bill fa-8x"></i>
+            <h4>Once a week</h4>
+            <h6>casual/starter saver</h6>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Option 1</a>
+        </div>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <form method="POST">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Once a Week (10% Saving)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>The Casual/Starter saver plan. With this budget plan, Bread Builder will automatically
+                                put
+                                away 10% of your income hassle-free!</p>
+                        </div>
+                        <!--confirm account type-->
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a href="/income" type="submit" value="1" class="btn btn-success" id="accountType quiz1">Confirm</a>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+        <!-- option 2: save $100~ OR 30-40% of income -->
+        <div class="quiz_option option_b">
+            <i class="fa-solid fa-coins fa-8x"></i>
+            <h4>Once a month</h4>
+            <h6>intermediate saver</h6>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal2">Option 2</a>
+        </div>
+
+        <div id="myModal2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <form method="POST">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Once a Month (30% Saving)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>The Intermediate saver plan. With this budget plan, Bread Builder will automatically put
+                                away 30% of your income hassle-free!</p>
+                        </div>
+                        <!--confirm account type-->
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a href="/income" type="submit" value="2" class="btn btn-success" id="accountType quiz2">Confirm</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- option 3: save $150 OR 50% of income -->
+        <div class="quiz_option option_c">
+            <i class="fa-solid fa-piggy-bank fa-8x"></i>
+            <h4>Once a year</h4>
+            <h6>Pro saver</h6>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal3">Option 3</a>
+        </div>
+
+        <div id="myModal3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <form method="POST">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Once a Year (50% Saving)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>The Pro saver plan. With this budget plan, Bread Builder will automatically put
+                                away 50% of your income hassle-free!</p>
+                        </div>
+                        <!--confirm account type-->
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a href="/income" type="submit" value="3" class="btn btn-success" id="accountType quiz3">Confirm</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- option 4: save $200+ or 80%+ of total income-->
+        <div class="quiz_option option_d">
+            <i class="fa fa-solid fa-vault fa-8x"></i>
+            <h4>Never</h4>
+            <h6>Super Saver</h6>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal4">Option 4</a>
+        </div>
+
+        <div id="myModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <form method="POST">
+                    <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Never (80% Saving)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The Super saver plan. With this budget plan, Bread Builder will automatically put
+                            away 80% or more of your income hassle-free!</p>
+                    </div>
+                    <!--confirm account type-->
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a href="/income" type="submit" value="4" class="btn btn-success" id="accountType quiz4">Confirm</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- quiz options end -->
+
+
+</div>
+
+{% endblock %}

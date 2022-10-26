@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- about us page start -->
+<div class="wrapper">
+    <div class="img_container">
+        <img src="../static/images/finance_bg_cropped.jpg" alt="fancy_money_image" class="abt_img">
+    </div>
+</div>
+
+<!--about us description-->
+<div class="container">
+    <div class="center_text">
+        <h3>Who is Bread Builder?</h3>
+    </div>
+    <blockquote>
+        <h5>At Bread Builder we aim to create an application that will help young people flourish financially. As two
+            working students ourselves, we understand the pain of juggling transport, food, rent and other costs.
+            Through
+            our application students and youth alike will be able to set out a simple view of all the expenses and
+            income they have.</h5>
+        <footer>- Creators Lara and Keith</footer>
+    </blockquote>
+
+</div>
+
+<br>
+<!--profile cards start-->
+<div class="center_text">
+    <h3>More about the creators</h3>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+
+            <!--lara card-->
+            <div class="card">
+                <img src="static/images/laraprofilecropped.jpg" alt="John" style="width:100%">
+                <h1>Larissa Smith</h1>
+                <p class="title">CEO & Founder</p>
+                <p>Harvard University</p>
+                <p>
+                    <button>Contact</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+
+            <!--keith card-->
+            <div class="card">
+                <img src="static/images/keithprofilecropped.jpg" alt="John" style="width:100%">
+                <h1>Keith Baloyo</h1>
+                <p class="title">CEO & Founder</p>
+                <p>Yale University</p>
+                <p>
+                    <button>Contact</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about us page end -->
+
+{% endblock %}
